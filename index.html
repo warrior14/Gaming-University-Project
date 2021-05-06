@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming University</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+    <section class='header'>
+        <nav>
+            <a href="index.html"><img src="images/controllerGif.gif"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Course</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+<div class="text-box">
+    <h1>Best Gaming Tips!</h1>
+    <p>We all could use and learn some tricks to better our gaming skills ...<br>
+        So why not learn all that you can with us?</p>
+    <a href="" class="hero-btn">Visit us to know more</a>    
+</div>
+
+    </section>
+
+<!------Course------>
+
+    <section class="course">
+        <h1>Courses We Offer!</h1>
+        <p>Choose on how much information you want to learn!</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>The intermediate course will help you become a decent and competent video game player!</p>                
+            </div>
+            <div class="course-col">
+                <h3>Pro</h3>
+                <p>The pro course will help you become an above average video game player!</p>
+            </div>
+            <div class="course-col">
+                <h3>Master</h3>
+                <p>The master course will help you become a top player and dominate the game!</p>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- -----Campus---- -->
+
+    <section class="campus">
+        <h1>Our Global Campus</h1>
+        <p>We strive to be an easily accessible Gaming University!</p>
+
+        <div class="row">
+            <div class="campus-col">
+                <img src="images/merica.jpeg">
+                <div class="layer">
+                    <h3>USA</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="images/africa.jpeg">
+                <div class="layer">
+                    <h3>Africa</h3>
+                </div>
+            </div>
+                <div class="campus-col">
+                    <img src="images/asia.jpg">
+                    <div class="layer">
+                        <h3>Asia</h3>
+                    </div>
+                </div>
+        </div>
+
+    </section>
+
+
+
+<!-------Facilities------->
+
+    <section class="facilities">
+        <h1>Our facilities</h1>
+        <p>We have three awesome locations to pick from, each one is a great place to learn!</p>
+
+        <div class="row">
+            <div class="facilities-col">
+                <img src="images/library.jpg">
+                <h3>World Class Gaming Library</h3>
+                <p>Feel free to browse through the collection of cool video games in the world!</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/playground.jpg_cropX1=0&cropX2=3199&cropY1=159&cropY2=1714">
+                <h3>Largest Gaming Playground</h3>
+                <p>Come enjoy watching pro video game players in our playground!</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/cafe.jpg">
+                <h3>Tasty And Healthy Food</h3>
+                <p>What's not to enjoy in a gaming cafeteria?</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ------Testimonials------ -->
+
+    <section class="testimonials">
+        <h1>What Our Alumnis Say!</h1>
+        <p>Raw and honest testimonials that prove that our Gaming University works!</p>
+
+        <div class="row">
+            <div class="testimonial-col">
+                <img src="images/luke.jpg">
+                <div>
+                    <p>At first I was a noob at playing video games but now ... I annihilate noobs!</p>
+                    <h3>Lukang</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-col">
+            <img src="images/gabe.jpg">
+            <div>
+                <p>Playing video games is my passion so it was only natural to want to step up my game!</p>
+                <h3>Gabrielo</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+        </div>
+        <div class="testimonial-col">
+            <img src="images/sis.jpg">
+            <div>
+                <p>I don't like losing ... I like winning ... so I had to enroll at Gaming University!</p>
+                <h3>Luzo</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+        </div>
+
+    </section>
+
+
+<!-- -----Call To Action------ -->
+
+    <section class="cta">
+        <h1>Enroll In Our Various Online Courses Now!</h1>
+            <a href="">Contact Us</a>
+    </section>
+
+
+    <!-- ------------Javascript for Toggle Menu-------->
+    <script>
+        let navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px"
+        }
+
+    </script>
+
+</body>
+</html>
